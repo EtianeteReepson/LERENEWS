@@ -2,10 +2,16 @@
 
 class HomeController extends RenderViews
 {
+    private $newsDAO;
+
+   public function __construct(){
+       $this->newsDAO = new NewsDAO();
+    }
+    
     public function index()
     {
         $this->loadView('homepage', [
-
+        
         ]);
     }
 
@@ -25,7 +31,7 @@ class HomeController extends RenderViews
 
     public function mundo()
     {
-        $this->loadView('Mundo', []);
+        $this->loadView('Mundo', ['news' => $this->newsDAO->getNews()]);
     }
 
     public function politica()
@@ -40,7 +46,14 @@ class HomeController extends RenderViews
 
 
     public function contact(){
-       
-        $this->loadView('contact-page', []);
+      $this->loadView('contact-page', []);
+    }
+
+    public function cadastrar(){
+        $this->loadView('cadastrar', []);
+    }
+
+    public function adicionarNews(){
+        $this->loadView('adicionarNews', []);
     }
 }

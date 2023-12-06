@@ -263,6 +263,8 @@ button.btn:hover {
 
 .nav-bar .b-search input[type=text]:focus {
     border-color: red;
+
+    
 }
 
 .nav-bar .b-search button {
@@ -281,6 +283,7 @@ button.btn:hover {
     background: red;
     color: #ffffff;
 }
+
 @media (max-width: 767.98px) {
     .nav-bar .b-search {
         text-align: center;

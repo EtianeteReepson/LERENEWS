@@ -64,7 +64,7 @@
                         <a href="mundo" class="nav-item nav-link">Mundo</a>
                         <a href="politica" class="nav-item nav-link">Política</a>
                         <a href="economia" class="nav-item nav-link">Economia</a>
-                        <a href="desporto" class="nav-item nav-link">Desporto</a>
+                        <a href="desporto " class="nav-item nav-link">Desporto</a>
                         <a href="saude" class="nav-item nav-link">Saúde</a>
                     </div>
 
@@ -73,6 +73,7 @@
                             <input type="text" placeholder="Pesquisar na LeReNews">
                             <button><i class="fa fa-search"></i></button>
                         </div>
+
                     </div>
                     <div class="col-lg-0">
                         <div class="social ml-auto">

@@ -9,6 +9,15 @@ spl_autoload_register(function ($file) {
     } else if (file_exists(__DIR__ . "/models/$file.php")) {
         require_once __DIR__ . "/models/$file.php";
     }
+    else if (file_exists(__DIR__ . "/models/dao/$file.php")) {
+        require_once __DIR__ . "/models/dao/$file.php";
+    }
+    else if (file_exists(__DIR__ . "/models/dto/$file.php")) {
+        require_once __DIR__ . "/models/dto/$file.php";
+    }
+    else if (file_exists(__DIR__ . "/models/connect/$file.php")) {
+        require_once __DIR__ . "/models/connect/$file.php";
+    }
 });
 
 $core = new Core();
