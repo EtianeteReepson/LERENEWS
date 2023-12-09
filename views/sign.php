@@ -134,7 +134,7 @@
     </div>
 
     <div class="mt-2 text-sm text-gray-600 dark:text-gray-400">
-        <a class="text-blue-600 decoration-2 font-medium" href="views/cadastrar.php">
+        <a class="text-blue-600 decoration-2 font-medium" href="cadastrar">
             Não tem uma conta? Cadastre-se
 
 

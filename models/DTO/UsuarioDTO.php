@@ -6,7 +6,7 @@ class UsuarioDTO{
     public $email;
     public $senha;
 
-    public function __construct($id, $nome, $email, $senha){
+    public function __construct($id, $nome, $email, $senha, ){
          
         $this->id = $id;
         $this->nome = $nome;

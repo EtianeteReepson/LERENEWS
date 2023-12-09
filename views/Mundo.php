@@ -42,7 +42,7 @@
                     <div class="col-lg-6 col-md-4">
                         <div class="b-ads">
                             <a href="https://htmlcodex.com">
-                                <img src="views/support/img/ads-1.jpg" alt="Ads">
+                                <img src="https://tpc.googlesyndication.com/simgad/9832959535463335150" >
                             </a>
                         </div>
                     </div>
@@ -107,15 +107,14 @@
                     <div class="col-lg-8">
                         <div class="sn-container">
                             <div class="sn-img">
-                                <img src="views/support/img/news-825x525.jpg" />
+                                <img src="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/a0b5374b-157c-43a0-b222-c820b33866a4.JPG" />
                             </div>
                             <?php foreach($news as $new): ?>
                             <div class="sn-content">
                                 <h1 class="sn-title"><?php echo $new['titulo']; ?></h1>
-                                <p>
-                                    <?php echo $new['corpo']; ?>
-                                </p>
+                                <p><?php echo $new['corpo']; ?></p>
                                 <p><?php echo $new['data']; ?></p>
+                                <p><?php echo $new['categoria']; ?></p>
                             </div>
                             <?php endforeach; ?>
                         </div>
@@ -124,33 +123,33 @@
                             <div class="row sn-slider">
                                 <div class="col-md-4">
                                     <div class="sn-img">
-                                        <img src="views/support/img/news-350x223-1.jpg" />
+                                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/231206103954-01-boris-johnson-covid-19-hearing-grab.jpg?c=16x9&q=h_438,w_780,c_fill" />
                                         <div class="sn-title">
-                                            <a href="">Interdum et fames ac ante</a>
+                                            <a href="">The dead can’t hear your apologies:’ Boris Johnson heckled as he attempts to say sorry for Covid deaths</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="sn-img">
-                                        <img src="img/news-350x223-2.jpg" />
+                                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/shutterstock-editorial-13721297g-1.jpg?c=16x9&q=h_270,w_480,c_fill" />
                                         <div class="sn-title">
-                                            <a href="">Interdum et fames ac ante</a>
+                                            <a href="">O que é a COP28? A cimeira climática da ONU, explicou</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="sn-img">
-                                        <img src="img/news-350x223-3.jpg" />
+                                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/231128100300-01-ukraine-snow.jpg?c=16x9&q=h_438,w_780,c_fill" />
                                         <div class="sn-title">
-                                            <a href="">Interdum et fames ac ante</a>
+                                            <a href="">At least 10 dead after heavy snowstorm sweeps across Ukraine</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="sn-img">
-                                        <img src="views/support/img/news-350x223-4.jpgimg/news-350x223-4.jpg" />
+                                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/231013142138-issam-abdallah-before-attack.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" />
                                         <div class="sn-title">
-                                            <a href="">Interdum et fames ac ante</a>
+                                            <a href="">Investigations say Israeli tank shells struck and killed Reuters journalist in October</a>
                                         </div>
                                     </div>
                                 </div>
@@ -158,242 +157,11 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
-                        <div class="sidebar">
-                            <div class="sidebar-widget">
-                                <h2 class="sw-title">In This Category</h2>
-                                <div class="news-list">
-                                    <div class="nl-item">
-                                        <div class="nl-img">
-                                            <img src="iviews/support/img/news-350x223-1.jpg" />
-                                        </div>
-                                        <div class="nl-title">
-                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                        </div>
-                                    </div>
-                                    <div class="nl-item">
-                                        <div class="nl-img">
-                                            <img src="views/support/img/news-350x223-2.jpg" />
-                                        </div>
-                                        <div class="nl-title">
-                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                        </div>
-                                    </div>
-                                    <div class="nl-item">
-                                        <div class="nl-img">
-                                            <img src="views/support/img/news-350x223-3.jpg" />
-                                        </div>
-                                        <div class="nl-title">
-                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                        </div>
-                                    </div>
-                                    <div class="nl-item">
-                                        <div class="nl-img">
-                                            <img src="views/support/img/news-350x223-4.jpg" />
-                                        </div>
-                                        <div class="nl-title">
-                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                        </div>
-                                    </div>
-                                    <div class="nl-item">
-                                        <div class="nl-img">
-                                            <img src="views/support/img/news-350x223-5.jpg" />
-                                        </div>
-                                        <div class="nl-title">
-                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    
 
                             <div class="sidebar-widget">
                                 <div class="views/support/img">
-                                    <a href="https://htmlcodex.com"><img src="views/support/img/ads-2.jpg" alt="views/support/img"></a>
-                                </div>
-                            </div>
-
-                            <div class="sidebar-widget">
-                                <div class="tab-news">
-                                    <ul class="nav nav-pills nav-justified">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="pill" href="#featured">Featured</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#popular">Popular</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#latest">Latest</a>
-                                        </li>
-                                    </ul>
-
-                                    <div class="tab-content">
-                                        <div id="featured" class="container tab-pane active">
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-1.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-2.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-3.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-4.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-5.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="popular" class="container tab-pane fade">
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-4.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-3.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-2.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-1.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-2.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="latest" class="container tab-pane fade">
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-3.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-4.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-5.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-4.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-3.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="sidebar-widget">
-                                <div class="image">
-                                    <a href="https://htmlcodex.com"><img src="img/ads-2.jpg" alt="Image"></a>
-                                </div>
-                            </div>
-
-                            <div class="sidebar-widget">
-                                <h2 class="sw-title">News Category</h2>
-                                <div class="category">
-                                    <ul>
-                                        <li><a href="">National</a><span>(98)</span></li>
-                                        <li><a href="">International</a><span>(87)</span></li>
-                                        <li><a href="">Economics</a><span>(76)</span></li>
-                                        <li><a href="">Politics</a><span>(65)</span></li>
-                                        <li><a href="">Lifestyle</a><span>(54)</span></li>
-                                        <li><a href="">Technology</a><span>(43)</span></li>
-                                        <li><a href="">Trades</a><span>(32)</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="sidebar-widget">
-                                <div class="image">
-                                    <a href="https://htmlcodex.com"><img src="img/ads-2.jpg" alt="Image"></a>
-                                </div>
-                            </div>
-
-                            <div class="sidebar-widget">
-                                <h2 class="sw-title">Tags Cloud</h2>
-                                <div class="tags">
-                                    <a href="">National</a>
-                                    <a href="">International</a>
-                                    <a href="">Economics</a>
-                                    <a href="">Politics</a>
-                                    <a href="">Lifestyle</a>
-                                    <a href="">Technology</a>
-                                    <a href="">Trades</a>
+                                    <a href="https://htmlcodex.com"><img src="https://tpc.googlesyndication.com/simgad/9832959535463335150"></a>
                                 </div>
                             </div>
                         </div>

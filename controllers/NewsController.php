@@ -1,37 +1,53 @@
 <?php
 
-class NewsController extends RenderViews{
+class NewsController extends RenderViews
+{
 
     private $news;
 
-    public function __construct(){
+    public function __construct()
+    {
         $this->news = new NewsDAO();
     }
-    public function index(){
-
+    public function index()
+    {
     }
 
 
-    public function create(){ 
-        $title = $_POST['titulo'];
-        $body= $_POST['corpo'];
-        $date = $_POST['data'];
-        $this->news->create($title, $body, $date);
+    public function addNews()
+    {
+        $tittle = $_POST['tittle'];
+        $news = $_POST['news'];
+        $category = $_POST['category'];
+        $this->news->addNews($tittle, $news, $category);
     }
 
-    public function buscar(){
-        $this->loadView("listarNews", ['news' =>$this->news->buscar()]);
-    }
+    
 
     public function show(){
-        
     }
-    public function edit($id){}
-
-    public function update(){
-        $newsDTO = new NewsDTO();
-        $this->news->update($newsDTO);
-
+    public function edit()
+    {
+    }
+    public function editNews()
+    {
+        $id = $_GET["news"];
+        $this->loadView("editarNews", ['news' => $this->news->getNewsById($id)]);
     }
 
+    public function updateNews()
+    {
+        $id = $_POST['id'];
+        $tittle = $_POST['tittle'];
+        $news = $_POST['news'];
+        $category = $_POST['category'];
+        $this->news->updateNews($id, $tittle, $news, $category);
+    }
+    public function deleteNews()
+    {
+        $id = $_GET['news'];
+        $this->news->deleteNewsId($id);
+    }
+   
+    
 }

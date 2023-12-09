@@ -1,5 +1,6 @@
 <?php
-class UserDAO{
+class UserDAO
+{
     private $pdo;
 
     public function __construct()
@@ -7,7 +8,7 @@ class UserDAO{
         $this->pdo = Database::getConnection();
     }
 
-  public function fetch()
+    public function fetch()
     {
         $stm = $this->pdo->query("SELECT * FROM usuario");
         if ($stm->rowCount() > 0) {
@@ -23,7 +24,8 @@ class UserDAO{
         $stm->bindParam(':email', $email);
         $stm->bindParam(':senha', $senha);
         $stm->execute();
-        header('location: ./');
+
+        header('Location: /LeReNews');
     }
 
 
@@ -49,7 +51,7 @@ class UserDAO{
         $stm->execute();
     }
 
-    
+
 
     public function fetchById($id)
     {
@@ -57,7 +59,7 @@ class UserDAO{
         $stm->execute([$id]);
         return $stm->fetch(PDO::FETCH_ASSOC);
     }
-    
+
 
     public function logout()
     {
@@ -96,7 +98,5 @@ class UserDAO{
         $stm->execute();
 
         return $stm->fetch(PDO::FETCH_ASSOC);
-        }
-    
+    }
 }
-?>

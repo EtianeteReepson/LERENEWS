@@ -40,7 +40,7 @@
                 <div class="col-lg-6 col-md-4">
                     <div class="b-ads">
                         <a href="https://htmlcodex.com">
-                            <img src="views/support/img/ads-1.jpg" alt="Ads">
+                            <img src="https://tpc.googlesyndication.com/simgad/9832959535463335150">
                         </a>
                     </div>
                 </div>
@@ -69,11 +69,10 @@
                     </div>
 
                     <div class="col-lg-3 col-md-4 m-2">
-                        <div class="b-search">
-                            <input type="text" placeholder="Pesquisar na LeReNews">
-                            <button><i class="fa fa-search"></i></button>
-                        </div>
-
+                            <div class="b-search">
+                                <input type="text" name= "pesquisar" placeholder="Pesquisar na LeReNews">
+                                <button><i class="fa fa-search"></i></button>
+                             </div>
                     </div>
                     <div class="col-lg-0">
                         <div class="social ml-auto">
@@ -95,17 +94,17 @@
                     <div class="row tn-slider">
                         <div class="col-md-6">
                             <div class="tn-img">
-                                <img src="views/support/img/news-450x350-1.jpg" />
+                                <img src="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/a0b5374b-157c-43a0-b222-c820b33866a4.JPG" />
                                 <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                    <a href="mundo">Imagens de Gaza mostram soldados israelenses detendo dezenas de homens só com roupas íntimas</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="tn-img">
-                                <img src="views/support/img/news-450x350-2.jpg" />
+                                <img src="https://media.cnn.com/api/v1/images/stellar/prod/231120180025-joe-biden-file-112023.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" />
                                 <div class="tn-title">
-                                    <a href="">Integer hendrerit elit eget purus sodales maximus</a>
+                                    <a href="politica">Esta pode ser a melhor esperança de Biden de reverter sua queda com os eleitores negros e pardos</a>
                                 </div>
                             </div>
                         </div>
@@ -115,33 +114,25 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="tn-img">
-                                <img src="views/support/img/news-350x223-1.jpg" />
+                                <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/08/saara-rj.jpg?w=1220&h=674&crop=1" />
                                 <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit</a>
+                                    <a href="economia">Mesmo com alta do e-commerce, 75% dos consumidores devem buscar lojas físicas para compras de Natal, diz CNDL</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="tn-img">
-                                <img src="views/support/img/news-350x223-2.jpg" />
+                                <img src="vihttps://media.cnn.com/api/v1/images/stellar/prod/231206120026-02-tahiti-2024-olympics.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" />
                                 <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit</a>
+                                    <a href="desporto">Construção de torre de alumínio no Taiti para evento olímpico de surf foi interrompida depois que barcaça danificou corais</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="tn-img">
-                                <img src="iviews/support/img/news-350x223-3.jpg" />
+                                <img src="https://media.cnn.com/api/v1/images/stellar/prod/231201130942-china-children-pneumonia-112923.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" />
                                 <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="tn-img">
-                                <img src="views/support/img/news-350x223-4.jpg" />
-                                <div class="tn-title">
-                                    <a href="">Lorem ipsum dolor sit</a>
+                                    <a href="saude">O que saber sobre o Mycoplasma, a bactéria responsável pelos recentes picos de casos de pneumonia em Ohio e no exterior</a>
                                 </div>
                             </div>
                         </div>
@@ -565,23 +556,6 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3">
-                    <div class="mn-list">
-                        <h2>Read More</h2>
-                        <ul>
-                            <li><a href="">Lorem ipsum dolor sit amet</a></li>
-                            <li><a href="">Pellentesque tincidunt enim libero</a></li>
-                            <li><a href="">Morbi id finibus diam vel pretium enim</a></li>
-                            <li><a href="">Duis semper sapien in eros euismod sodales</a></li>
-                            <li><a href="">Vestibulum cursus lorem nibh</a></li>
-                            <li><a href="">Morbi ullamcorper vulputate metus non eleifend</a></li>
-                            <li><a href="">Etiam vitae elit felis sit amet</a></li>
-                            <li><a href="">Nullam congue massa vitae quam</a></li>
-                            <li><a href="">Proin sed ante rutrum</a></li>
-                            <li><a href="">Curabitur vel lectus</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

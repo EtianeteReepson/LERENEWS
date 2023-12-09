@@ -4,15 +4,14 @@ class HomeController extends RenderViews
 {
     private $newsDAO;
 
-   public function __construct(){
-       $this->newsDAO = new NewsDAO();
+    public function __construct()
+    {
+        $this->newsDAO = new NewsDAO();
     }
-    
+
     public function index()
     {
-        $this->loadView('homepage', [
-        
-        ]);
+        $this->loadView('homepage', []);
     }
 
     public function sign()
@@ -22,11 +21,11 @@ class HomeController extends RenderViews
 
     public function desporto()
     {
-        $this->loadView('Desporto', []);
+        $this->loadView('Desporto', ['news' => $this->newsDAO->getDesporto()]);
     }
     public function economia()
     {
-        $this->loadView('Economia', []);
+        $this->loadView('Economia', ['news' => $this->newsDAO->getEconomia()]);
     }
 
     public function mundo()
@@ -36,24 +35,45 @@ class HomeController extends RenderViews
 
     public function politica()
     {
-        $this->loadView('Politica', []);
+        $this->loadView('Politica', ['news' => $this->newsDAO->getPolitica()]);
     }
 
     public function saude()
     {
-        $this->loadView('Saude', []);
+        $this->loadView('Saude', ['news' => $this->newsDAO->getSaude()]);
     }
 
 
-    public function contact(){
-      $this->loadView('contact-page', []);
+    public function contact()
+    {
+        $this->loadView('contact-page', []);
     }
 
-    public function cadastrar(){
+    public function cadastrar()
+    {
         $this->loadView('cadastrar', []);
     }
 
-    public function adicionarNews(){
+    public function adicionarNews()
+    {
         $this->loadView('adicionarNews', []);
     }
+
+
+    public function loginAdmin()
+    {
+        $this->loadView('loginAdmin', []);
+    }
+
+
+    public function visualizarNews()
+    {
+        $this->loadView('visualizarNews', ['news' => $this->newsDAO->getNews()]);
+    }
+
+    public function perfilAdmin()
+    {
+        $this->loadView('perfilAdmin', []);
+    }
+    
 }
