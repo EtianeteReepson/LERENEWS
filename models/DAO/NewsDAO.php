@@ -70,6 +70,7 @@ class NewsDAO
         $sql->bindParam(':corpo', $news);
         $sql->bindParam(':categoria', $category);
         $sql->execute();
+        echo "<script> alert('Adicionado com sucesso');location.href='./visualizarNews'</script>";
     }
 
     public function deleteNewsId($id)
@@ -90,9 +91,10 @@ class NewsDAO
     {
         $sql = $this->pdo->prepare("SELECT * FROM noticias WHERE titulo LIKE '%$search'");
         $sql->execute();
-        $pesquisarNews = $sql->fetchAll(PDO::FETCH_ASSOC);
-        return $pesquisarNews;
+        $result_noticias = $pesquisar = $sql->fetchAll(PDO::FETCH_ASSOC);
+        return $pesquisar;
     }
+    
 
     
 }

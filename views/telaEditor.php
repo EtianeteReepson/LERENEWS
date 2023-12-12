@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Tela Admin</title>
+  <title>Tela Editor</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -46,7 +46,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="visualizarNews" class="logo d-flex align-items-center">
         <img src="views/support/img/lerenews287x87.png" alt="">
-        <span class="d-none d-lg-block">Admin</span>
+        <span class="d-none d-lg-block">Editor</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -97,39 +97,20 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="visualizarNews">
+        <a class="nav-link " href="telaEditor">
           <i class="bi bi-grid"></i>
           <span>Menu</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="adicionarNews">
+        <a class="nav-link collapsed" href="adicionarNEditor">
           <i class="bi bi-journal-text"></i>
           <span>News</span></i>
         </a>
       </li><!-- End News Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="cadastrarEditor">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Cadastrar Editores</span>
-        </a>
-      </li><!-- End Cadastrar Editores Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="listarEditor">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Listar Editores</span>
-        </a>
-      </li><!-- End Editores Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="listarUsuario">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Listar Usuários</span>
-        </a>
-      </li><!-- End User Page Nav -->
+      
 
     </ul>
 
@@ -141,7 +122,7 @@
       <h1>LeReNews</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="visualizarNews">Home</a></li>
+          <li class="breadcrumb-item"><a href="telaEditor">Home</a></li>
         </ol>
       </nav>
     </div><!-- End Page Title -->

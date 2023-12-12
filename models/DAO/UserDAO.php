@@ -19,10 +19,11 @@ class UserDAO
     }
     public function cadastrar($nome, $email, $senha)
     {
+        $hashPassword = password_hash($senha, PASSWORD_DEFAULT);
         $stm = $this->pdo->prepare("INSERT INTO usuario(nome, email, senha) VALUES(:nome, :email, :senha)");
         $stm->bindParam(':nome', $nome);
         $stm->bindParam(':email', $email);
-        $stm->bindParam(':senha', $senha);
+        $stm->bindParam(':senha', $hashPassword);
         $stm->execute();
 
         header('Location: /LeReNews');
@@ -82,11 +83,18 @@ class UserDAO
         $stm->execute();
 
         $usuario = $stm->fetch(PDO::FETCH_ASSOC);
+        var_dump($usuario);
 
         if ($usuario && password_verify($senha, $usuario['senha'])) {
-            $_SESSION['user_id'] = $usuario['id'];
-            header("Location: /LeReNews/homepage");
+            if ($usuario['access']) {
+                $_SESSION['admin_id'] = $usuario['id'];
+                header("Location: ./visualizarNews");
+            } else {
+                $_SESSION['user_id'] = $usuario['id'];
+                header("Location: ./");
+            }
         } else {
+            echo "<script> alert('Credencias erradas, por favor verifique! ');location.href='./sign'</script>";
             return false;
         }
     }

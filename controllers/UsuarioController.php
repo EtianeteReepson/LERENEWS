@@ -8,21 +8,20 @@ class UsuarioController extends RenderViews
     }
     public function index()
     {
-        
     }
     public function show($id)
     {
         $idUser = $id[0];
         $this->loadView('A_listaUsuario', ['usuario' => $this->usuario->fetchById($idUser)]);
     }
-    
+
     public function cadastrar()
     {
         $nome = $_POST['nome'];
         $email = $_POST['email'];
         $senha = $_POST['senha'];
         //$admin = $_POST['admin'];
-        
+
         $this->usuario->cadastrar($nome, $email, $senha);
     }
 
@@ -37,7 +36,8 @@ class UsuarioController extends RenderViews
         $this->usuario->delete($idUser);
     }
 
-    public function apagado(){
+    public function apagado()
+    {
         $this->loadView('listaUsuario', []);
     }
 
@@ -46,18 +46,10 @@ class UsuarioController extends RenderViews
         $this->usuario->logout();
     }
 
-    public function signIn($email,$senha)
+    public function signIn()
     {
-        
-            $email = $_POST['email']; 
-            $senha = $_POST['senha'];         
-            $this->usuario->signIn($email, $senha);
-         
-        }
-
-    public function buscar()
-    {
-       // $this->loadView("listaUsuario", ['usuarios' => $this->Usuario->buscar()]);
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+        $this->usuario->signIn($email, $senha);
     }
-
 }

@@ -60,12 +60,6 @@ class HomeController extends RenderViews
     }
 
 
-    public function loginAdmin()
-    {
-        $this->loadView('loginAdmin', []);
-    }
-
-
     public function visualizarNews()
     {
         $this->loadView('visualizarNews', ['news' => $this->newsDAO->getNews()]);
@@ -75,5 +69,33 @@ class HomeController extends RenderViews
     {
         $this->loadView('perfilAdmin', []);
     }
-    
+
+    public function loginEditor()
+    {
+        $this->loadView('loginEditor', []);
+    }
+
+    public function telaEditor()
+    {
+        $this->loadView('telaEditor', ['news' => $this->newsDAO->getNews()]);
+    }
+
+    public function listarUsuario()
+    {
+        $this->loadView('listarUsuario', []);
+    }
+
+    public function listarEditor()
+    {
+        $this->loadView('listarEditor', []);
+    }
+
+    public function adicionarNEditor()
+    {
+        $this->loadView('adicionarEditor', []);
+    }
+
+    public function cadastrarEditor(){
+        $this->loadView('cadastrarEditor', []);
+    }
 }

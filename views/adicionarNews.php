@@ -129,13 +129,26 @@
         </a>
       </li><!-- End News Nav -->
 
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="cadastrarEditor">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Cadastrar Editores</span>
+        </a>
+      </li><!-- End Cadastrar Editores Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="loginAdmin">
+        <a class="nav-link collapsed" href="listarEditor">
           <i class="bi bi-box-arrow-in-right"></i>
-          <span>Login</span>
+          <span>Listar Editores</span>
         </a>
-      </li><!-- End Login Page Nav -->
+      </li><!-- End Editores Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="listarUsuario">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Listar Usuários</span>
+        </a>
+      </li><!-- End User Page Nav -->
 
     </ul>
 
@@ -144,7 +157,7 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Form Editors</h1>
+      <h1>Adicionar Noticias</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./">Home</a></li>

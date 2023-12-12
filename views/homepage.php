@@ -69,10 +69,13 @@
                     </div>
 
                     <div class="col-lg-3 col-md-4 m-2">
+                        <form method="POST" action="pesquisar">
                             <div class="b-search">
                                 <input type="text" name= "pesquisar" placeholder="Pesquisar na LeReNews">
                                 <button><i class="fa fa-search"></i></button>
-                             </div>
+                             
+                            </div>
+                        </form>     
                     </div>
                     <div class="col-lg-0">
                         <div class="social ml-auto">

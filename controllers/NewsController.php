@@ -48,6 +48,11 @@ class NewsController extends RenderViews
         $id = $_GET['news'];
         $this->news->deleteNewsId($id);
     }
+
+    public function pesquisar(){
+        $pesquisar = $_POST('pesquisar');
+        
+    }
    
     
 }
