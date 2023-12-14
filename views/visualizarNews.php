@@ -149,12 +149,10 @@
     <section class="section">
       <div class="column align-items-top">
         <div class="col-lg-12">
-
-          <!-- Default Card -->
-          <!-- Card with header and footer -->
+          
           <?php foreach ($news as $news) : ?>
             <div class="card">
-              <div class="card-header">News</div>
+              <div class="card-header">Notícias</div>
               <div class="card-body">
                 <h5 class="card-title"><?php echo $news['titulo'] ?></h5>
                 <?php echo $news['corpo'] ?>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Mundo | LeReNews</title>
+    <title>Desporto | LeReNews</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Bootstrap News Template - Free HTML Templates" name="keywords">
     <meta content="Bootstrap News Template - Free HTML Templates" name="description">
@@ -42,7 +42,7 @@
                     <div class="col-lg-6 col-md-4">
                         <div class="b-ads">
                             <a href="https://htmlcodex.com">
-                                <img src="https://tpc.googlesyndication.com/simgad/9832959535463335150" >
+                                <img src="views/support/img/ads-1.jpg" alt="Ads">
                             </a>
                         </div>
                     </div>
@@ -61,14 +61,6 @@
                     </button>
 
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto">
-                            <a href="./" class="nav-item nav-link ">HOME</a>
-                            <a href="mundo" class="nav-item nav-link active">Mundo</a>
-                            <a href="politica" class="nav-item nav-link">Política</a>
-                            <a href="economia" class="nav-item nav-link">Economia</a>
-                            <a href="desporto" class="nav-item nav-link">Desporto</a>
-                            <a href="saude" class="nav-item nav-link">Saúde</a>
-                        </div>
 
                         <div class="col-lg-3 col-md-4 m-2">
                             <div class="b-search">
@@ -92,7 +84,7 @@
         <div class="breadcrumb-wrap">
             <div class="container">
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="./">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">News</a></li>
                     <li class="breadcrumb-item active">News details</li>
                 </ul>
@@ -107,68 +99,29 @@
                     <div class="col-lg-8">
                         <div class="sn-container">
                             <div class="sn-img">
-                                <img src="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/a0b5374b-157c-43a0-b222-c820b33866a4.JPG" />
+                                <img src="https://media.cnn.com/api/v1/images/stellar/prod/231206120026-02-tahiti-2024-olympics.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" />
                             </div>
-                            <?php foreach($news as $new): ?>
                             <div class="sn-content">
-                                <h1 class="sn-title"><?php echo $new['titulo']; ?></h1>
-                                <p><?php echo $new['corpo']; ?></p>
-                                <p><?php echo $new['data']; ?></p>
-                                <p><?php echo $new['Categoria']; ?></p>
-                                <p><?php echo $new['nome_editor']; ?></p>
-                            </div>
-                            <?php endforeach; ?>
-                        </div>
-                        <div class="sn-related">
-                            <h2>Related News</h2>
-                            <div class="row sn-slider">
-                                <div class="col-md-4">
-                                    <div class="sn-img">
-                                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/231206103954-01-boris-johnson-covid-19-hearing-grab.jpg?c=16x9&q=h_438,w_780,c_fill" />
-                                        <div class="sn-title">
-                                            <a href="">The dead can’t hear your apologies:’ Boris Johnson heckled as he attempts to say sorry for Covid deaths</a>
-                                        </div>
+                                <?php foreach ($news as $new) : ?>
+                                    <div class="sn-content">
+                                        <h1 class="sn-title"><?php echo $new['titulo']; ?></h1>
+                                        <p><?php echo $new['corpo']; ?></p>
+                                        <p><?php echo $new['data']; ?></p>
+                                        <p><?php echo $new['Categoria']; ?></p>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="sn-img">
-                                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/shutterstock-editorial-13721297g-1.jpg?c=16x9&q=h_270,w_480,c_fill" />
-                                        <div class="sn-title">
-                                            <a href="">O que é a COP28? A cimeira climática da ONU, explicou</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="sn-img">
-                                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/231128100300-01-ukraine-snow.jpg?c=16x9&q=h_438,w_780,c_fill" />
-                                        <div class="sn-title">
-                                            <a href="">At least 10 dead after heavy snowstorm sweeps across Ukraine</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="sn-img">
-                                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/231013142138-issam-abdallah-before-attack.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" />
-                                        <div class="sn-title">
-                                            <a href="">Investigations say Israeli tank shells struck and killed Reuters journalist in October</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <?php endforeach; ?>
                             </div>
                         </div>
-                    </div>
+                        
 
-                    
-
-                            <div class="sidebar-widget">
-                                <div class="views/support/img">
-                                    <a href="https://htmlcodex.com"><img src="https://tpc.googlesyndication.com/simgad/9832959535463335150"></a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
         </div>
         <!-- Single News End-->
 

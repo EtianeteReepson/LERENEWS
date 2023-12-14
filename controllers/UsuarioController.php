@@ -55,4 +55,10 @@ class UsuarioController extends RenderViews
         $senha = $_POST['senha'];
         $this->usuario->signIn($email, $senha);
     }
+
+    public function listarUsuario()
+    {
+        $this->loadView("listarUsuario", ['usuarios' => $this->usuario->listarUsuario()]);
+    }
 }
+

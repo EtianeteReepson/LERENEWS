@@ -108,4 +108,10 @@ class UserDAO
 
         return $stm->fetch(PDO::FETCH_ASSOC);
     }
+    public function listarUsuario()
+    {
+        $sql = $this->pdo->query("SELECT * FROM usuario");
+        $sql->execute();
+        return $sql->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

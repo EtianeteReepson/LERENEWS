@@ -64,4 +64,9 @@ class EditorController extends RenderViews
         $id = $_GET['news'];
         $this->editor->deleteNewsEdId($id);
     }
+
+    public function listarEditor()
+    {
+        $this->loadView("listarEditor", ['editor' => $this->editor->listarEditor()]);
+    }
 }

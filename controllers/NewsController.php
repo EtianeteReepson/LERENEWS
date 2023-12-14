@@ -53,6 +53,6 @@ class NewsController extends RenderViews
     public function pesquisar()
     {
         $pesquisar = $_POST['pesquisar'];
-        $this->loadView('Desporto', ['news' => $this->news->pesquisarNews($pesquisar)]);
+        $this->loadView('telaResultado', ['news' => $this->news->pesquisarNews($pesquisar)]);
     }
 }

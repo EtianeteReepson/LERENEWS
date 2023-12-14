@@ -89,4 +89,11 @@ class EditorDAO
         $news = $sql->fetch(PDO::FETCH_ASSOC);
         return $news;
     }
+
+    public function listarEditor()
+    {
+        $sql = $this->pdo->query("SELECT * FROM editor");
+        $sql->execute();
+        return $sql->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

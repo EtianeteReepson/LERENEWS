@@ -33,8 +33,8 @@ $routes = [
     '/pesquisarNews' => 'NewsController@pesquisar',
     '/loginEditor' => 'HomeController@loginEditor',
     '/telaEditor' => 'HomeController@telaEditor',
-    '/listarUsuario' => 'HomeController@listarUsuario',
-    '/listarEditor' => 'HomeController@listarEditor',
+    '/listarUsuario' => 'UsuarioController@listarUsuario',
+    '/listarEditor' => 'EditorController@listarEditor',
     '/adicionarNEditor' => 'HomeController@adicionarNEditor',
     '/cadastrarEditor' => 'Homecontroller@cadastrarEditor',
     '/cadastrarEditores' => 'EditorController@cadastrar',
@@ -43,4 +43,5 @@ $routes = [
     '/editNewsEd' => 'EditorController@editNewsEd',
     '/deleteNewsEd' => 'EditorController@deleteNewsEd',
     '/updateNewsEd' => 'EditorController@updateNewsEd',
+    
 ];

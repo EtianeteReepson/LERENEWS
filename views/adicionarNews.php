@@ -185,6 +185,7 @@
                   <textarea name="news" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                   <label for="floatingTextarea2">Escreva</label>
                 </div>
+                
                 <div class="form-floating m-4">
                   <select name="category" class="form-select" id="floatingSelect" aria-label="Floating label select example">
                     <option selected value="Politica">Politica</option>
