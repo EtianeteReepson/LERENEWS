@@ -116,6 +116,7 @@
                                         <p><?php echo $new['corpo']; ?></p>
                                         <p><?php echo $new['data']; ?></p>
                                         <p><?php echo $new['categoria']; ?></p>
+                                        <p><?php echo $new['nome_editor']; ?></p>
                                     </div>
                                 <?php endforeach; ?>
                             </div>
@@ -206,10 +207,10 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                                        
 
-                        
+
+
+
 
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 class NewsController extends RenderViews
 {
 
@@ -22,9 +22,10 @@ class NewsController extends RenderViews
         $this->news->addNews($tittle, $news, $category);
     }
 
-    
 
-    public function show(){
+
+    public function show()
+    {
     }
     public function edit()
     {
@@ -49,10 +50,9 @@ class NewsController extends RenderViews
         $this->news->deleteNewsId($id);
     }
 
-    public function pesquisar(){
-        $pesquisar = $_POST('pesquisar');
-        
+    public function pesquisar()
+    {
+        $pesquisar = $_POST['pesquisar'];
+        $this->loadView('Desporto', ['news' => $this->news->pesquisarNews($pesquisar)]);
     }
-   
-    
 }

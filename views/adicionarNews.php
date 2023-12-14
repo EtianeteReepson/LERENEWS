@@ -174,7 +174,7 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">TinyMCE Editor</h5>
+              <h5 class="card-title">Administrador</h5>
 
               <form action="addNews" method="post">
                 <div class="input-group input-group-sm mb-3">
@@ -183,7 +183,7 @@
                 </div>
                 <div class="form-floating">
                   <textarea name="news" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                  <label for="floatingTextarea2">Comments</label>
+                  <label for="floatingTextarea2">Escreva</label>
                 </div>
                 <div class="form-floating m-4">
                   <select name="category" class="form-select" id="floatingSelect" aria-label="Floating label select example">

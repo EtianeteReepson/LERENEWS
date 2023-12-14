@@ -1,4 +1,5 @@
 <?php
+session_start();
 class NewsDAO
 {
     private $pdo;
@@ -9,7 +10,7 @@ class NewsDAO
 
     public function getNews()
     {
-        $sql = $this->pdo->prepare("SELECT * FROM noticias ");
+        $sql = $this->pdo->prepare("SELECT editor.nome as nome_editor, noticias.titulo as titulo, noticias.corpo as corpo, noticias.data as data, noticias.Categoria as Categoria from noticias INNER JOIN editor WHERE noticias.idEditor = editor.id");
         $sql->execute();
         $news = $sql->fetchAll(PDO::FETCH_ASSOC);
         return $news;
@@ -25,7 +26,7 @@ class NewsDAO
 
     public function getMundo()
     {
-        $sql = $this->pdo->prepare("SELECT * FROM noticias WHERE Categoria = 'Mundo'");
+        $sql = $this->pdo->prepare("SELECT editor.nome as nome_editor, noticias.titulo as titulo, noticias.corpo as corpo, noticias.data as data, noticias.Categoria as Categoria from noticias INNER JOIN editor WHERE noticias.idEditor = editor.id AND Categoria = 'Mundo'");
         $sql->execute();
         $news = $sql->fetchAll(PDO::FETCH_ASSOC);
         return $news;
@@ -33,7 +34,7 @@ class NewsDAO
 
     public function getEconomia()
     {
-        $sql = $this->pdo->prepare("SELECT * FROM noticias WHERE Categoria = 'Economia'");
+        $sql = $this->pdo->prepare("SELECT editor.nome as nome_editor, noticias.titulo as titulo, noticias.corpo as corpo, noticias.data as data, noticias.Categoria as Categoria from noticias INNER JOIN editor WHERE noticias.idEditor = editor.id AND Categoria = 'Economia'");
         $sql->execute();
         $news = $sql->fetchAll(PDO::FETCH_ASSOC);
         return $news;
@@ -41,14 +42,14 @@ class NewsDAO
 
     public function getDesporto()
     {
-        $sql = $this->pdo->prepare("SELECT * FROM noticias WHERE Categoria = 'Desporto'");
+        $sql = $this->pdo->prepare("SELECT editor.nome as nome_editor, noticias.titulo as titulo, noticias.corpo as corpo, noticias.data as data, noticias.Categoria as Categoria from noticias INNER JOIN editor WHERE noticias.idEditor = editor.id AND Categoria = 'Desporto'");
         $sql->execute();
         $news = $sql->fetchAll(PDO::FETCH_ASSOC);
         return $news;
     }
     public function getSaude()
     {
-        $sql = $this->pdo->prepare("SELECT * FROM noticias WHERE Categoria = 'Saude'");
+        $sql = $this->pdo->prepare("SELECT editor.nome as nome_editor, noticias.titulo as titulo, noticias.corpo as corpo, noticias.data as data, noticias.Categoria as Categoria from noticias INNER JOIN editor WHERE noticias.idEditor = editor.id AND Categoria = 'Saude'");
         $sql->execute();
         $news = $sql->fetchAll(PDO::FETCH_ASSOC);
         return $news;
@@ -56,7 +57,7 @@ class NewsDAO
 
     public function getPolitica()
     {
-        $sql = $this->pdo->prepare("SELECT * FROM noticias WHERE Categoria = 'Politica'");
+        $sql = $this->pdo->prepare("SELECT editor.nome as nome_editor, noticias.titulo as titulo, noticias.corpo as corpo, noticias.data as data, noticias.Categoria as Categoria from noticias INNER JOIN editor WHERE noticias.idEditor = editor.id AND Categoria = 'Politica'");
         $sql->execute();
         $news = $sql->fetchAll(PDO::FETCH_ASSOC);
         return $news;
@@ -89,12 +90,9 @@ class NewsDAO
 
     public function pesquisarNews($search)
     {
-        $sql = $this->pdo->prepare("SELECT * FROM noticias WHERE titulo LIKE '%$search'");
+        $sql = $this->pdo->prepare("SELECT * FROM noticias WHERE titulo LIKE '$search%'");
         $sql->execute();
-        $result_noticias = $pesquisar = $sql->fetchAll(PDO::FETCH_ASSOC);
+        $pesquisar = $sql->fetchAll(PDO::FETCH_ASSOC);
         return $pesquisar;
     }
-    
-
-    
 }

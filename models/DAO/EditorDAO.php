@@ -1,4 +1,5 @@
 <?php
+session_start();
 class EditorDAO
 {
     private $pdo;
@@ -43,5 +44,49 @@ class EditorDAO
             echo "<script> alert('Credencias erradas, por favor verifique! ');location.href='./loginEditor'</script>";
             return false;
         }
+    }
+
+    public function addNewsEd($tittle, $news, $category)
+    {
+        $id = $_SESSION['editor_id'];
+        var_dump($news, $tittle, $category);
+        $sql = $this->pdo->prepare("INSERT INTO noticias(titulo, corpo, data, categoria, idEditor) VALUES (:tittle, :corpo, NOW(), :categoria, :idEditor)");
+        $sql->bindParam(':tittle', $tittle);
+        $sql->bindParam(':corpo', $news);
+        $sql->bindParam(':categoria', $category);
+        $sql->bindParam(':idEditor', $id);
+        $sql->execute();
+        echo "<script> alert('Adicionado com sucesso');location.href='./telaEditor'</script>";
+    }
+
+    public function deleteNewsEdId($id)
+    {
+        $sql = $this->pdo->prepare("DELETE FROM noticias WHERE id = $id");
+        $sql->execute();
+        echo "<script> alert('Apagado com sucesso');location.href='./telaEditor'</script>";
+    }
+
+    public function updateNewsEd($id, $tittle, $news, $category)
+    {
+        $sql = $this->pdo->prepare("UPDATE noticias SET titulo = '$tittle', corpo = '$news', Categoria = '$category' WHERE id = $id");
+        $sql->execute();
+        echo "<script> alert('Editado com sucesso');location.href='./telaEditor'</script>";
+    }
+
+    public function getNews()
+    {
+        $id = $_SESSION['editor_id'];
+        $sql = $this->pdo->prepare("SELECT * FROM noticias WHERE idEditor = $id");
+        $sql->execute();
+        $news = $sql->fetchAll(PDO::FETCH_ASSOC);
+        return $news;
+    }
+
+    public function getNewsById($id)
+    {
+        $sql = $this->pdo->prepare("SELECT * FROM noticias WHERE id = $id ");
+        $sql->execute();
+        $news = $sql->fetch(PDO::FETCH_ASSOC);
+        return $news;
     }
 }

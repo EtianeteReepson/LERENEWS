@@ -1,10 +1,13 @@
 <?php
+session_start();
 class UsuarioController extends RenderViews
 {
     private $usuario;
+    private $session;
     public function __construct()
     {
         $this->usuario = new UserDAO();
+        $this->session = new SessionManeger();
     }
     public function index()
     {
@@ -43,7 +46,7 @@ class UsuarioController extends RenderViews
 
     public function logout()
     {
-        $this->usuario->logout();
+        $this->session->destroy();
     }
 
     public function signIn()

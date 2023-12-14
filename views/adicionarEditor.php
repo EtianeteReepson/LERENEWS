@@ -96,7 +96,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="logout">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
@@ -153,16 +153,16 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">TinyMCE Editor</h5>
+              <h5 class="card-title">Editor</h5>
 
-              <form action="addNews" method="post">
+              <form action="addNewsEd" method="post">
                 <div class="input-group input-group-sm mb-3">
                   <span class="input-group-text" id="inputGroup-sizing-sm">Tittle</span>
                   <input type="text" name="tittle" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
                 <div class="form-floating">
                   <textarea name="news" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                  <label for="floatingTextarea2">Comments</label>
+                  <label for="floatingTextarea2">Escreva</label>
                 </div>
                 <div class="form-floating m-4">
                   <select name="category" class="form-select" id="floatingSelect" aria-label="Floating label select example">

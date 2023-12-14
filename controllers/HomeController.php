@@ -1,12 +1,15 @@
 <?php
-
+session_start();
 class HomeController extends RenderViews
 {
     private $newsDAO;
-
+    private $editorDAO;
+    private $session;
     public function __construct()
     {
         $this->newsDAO = new NewsDAO();
+        $this->editorDAO = new EditorDAO();
+        $this->session = new SessionManeger();
     }
 
     public function index()
@@ -77,7 +80,8 @@ class HomeController extends RenderViews
 
     public function telaEditor()
     {
-        $this->loadView('telaEditor', ['news' => $this->newsDAO->getNews()]);
+        $this->session->verify();
+        $this->loadView('telaEditor', ['news' => $this->editorDAO->getNews()]);
     }
 
     public function listarUsuario()
@@ -95,7 +99,8 @@ class HomeController extends RenderViews
         $this->loadView('adicionarEditor', []);
     }
 
-    public function cadastrarEditor(){
+    public function cadastrarEditor()
+    {
         $this->loadView('cadastrarEditor', []);
     }
 }
